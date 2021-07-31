@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS Client</title>
+    <title>Pong</title>
+    <link rel="stylesheet" href="pong.css">
 </head>
 <body>
+<header><h1>Pong</h1></header>
+
+<div class="score">Score: <span id="score">0</span></div>
+
+<div id="playground">
+    <div id="start-message">
+        press any key to start
+        <br/>
+        move &#8592; &#8594;
+    </div>
+    <div id="game-over">
+        game over
+        <br/>
+        refresh to play again
+    </div>
+    <div id="ball"></div>
+    <div id="racket"></div>
+</div>
+
 <script src="pong-kotlinjs.js"></script>
-<div id="root"></div>
 </body>
 </html>
