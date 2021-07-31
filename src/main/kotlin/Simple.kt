@@ -99,7 +99,7 @@ fun isRacketHit(racketHtml: HTMLElement, ballHtml: HTMLElement, ball: Ball): Boo
     val racketPosY = racketPositionY(racketHtml, ballHtml)
     val racketBorderLeft = racketHtml.offsetLeft
     val racketBorderRight = racketBorderLeft + racketHtml.offsetWidth
-    return posX >= racketBorderLeft && posX <= racketBorderRight && posY >= racketPosY
+    return posX in racketBorderLeft..racketBorderRight && posY >= racketPosY
 }
 
 fun racketPositionY(racketHtml: HTMLElement, ballHtml: HTMLElement): Int {
